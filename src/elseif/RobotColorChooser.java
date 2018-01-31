@@ -16,7 +16,7 @@ public class RobotColorChooser {
 		Robot robot = new Robot("batman");
 		robot.setSpeed(10);
 		//3. ask the user what color they would like the robot to draw
-		for (int i = 0; i < 10; i++) {
+		for (int i = 0; i < 50; i++) {
 			
 		int o = JOptionPane.showOptionDialog(null, "What colour do you want?", "Luke x Ralph <3", 0,
 				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "Red", "Green", "Blue" }, null);
@@ -41,7 +41,7 @@ public class RobotColorChooser {
 	    //1. make the robot draw a shape (this will take more than one line of code)
 		robot.penDown();
 		for (int z = 0; z < 4; z++) {
-			robot.turn(90);
+			robot.turn(45);
 			robot.move(90);
 		}
 		robot.turn(90);
